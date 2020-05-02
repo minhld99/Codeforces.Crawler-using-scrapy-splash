@@ -3,7 +3,6 @@
 ($ conda create --name crawler python) 
 $ virtualenv env
 $ source env/bin/activate
-
 ```
 2. Cài đặt docker thông qua homebrew (để chạy thư viện scrapy-splash)
 ```
@@ -24,5 +23,4 @@ pip3 install -r requirements.txt
 ```
 scrapy crawl cf_submission
 ```
-
 ### Learn lua to write splash in 15 minutes: http://tylerneylon.com/a/learn-lua/
