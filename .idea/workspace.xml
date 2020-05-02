@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bb1c7960-2faa-4f7e-a69e-d408d9b7ae2b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1b5dQdg21UV8D2bODfjEl0VIXrn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/codeforces_crawler" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb1c7960-2faa-4f7e-a69e-d408d9b7ae2b" name="Default Changelist" comment="" />
+      <created>1587925873992</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587925873992</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="451" y="248" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588269992616">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="451" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.830@0.23.1440.830" timestamp="1588269992616" />
+    <state x="507" y="200" key="FileChooserDialogImpl" timestamp="1588012110520">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="507" y="200" key="FileChooserDialogImpl/0.23.1440.830@0.23.1440.830" timestamp="1588012110520" />
+    <state x="229" y="105" key="SettingsEditor" timestamp="1588245724917">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1587926796628" />
+    <state x="229" y="105" key="SettingsEditor/0.23.1440.830@0.23.1440.830" timestamp="1588245724917" />
+    <state x="101" y="123" width="1240" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588271869533">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="101" y="123" width="1240" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.830@0.23.1440.830" timestamp="1588271869533" />
+    <state x="399" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1588397170085">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="399" y="268" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1588397170085" />
+    <state x="399" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.830@0.23.1440.830" timestamp="1588327224739" />
+    <state x="378" y="60" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588240527509">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="378" y="60" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.830@0.23.1440.830" timestamp="1588240527509" />
+  </component>
+</project>
