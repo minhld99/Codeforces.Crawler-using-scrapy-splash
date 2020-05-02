@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb1c7960-2faa-4f7e-a69e-d408d9b7ae2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cf_testcase.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cf_testcase.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codeforces_crawler/spiders/testcases_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/spiders/testcases_spider.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

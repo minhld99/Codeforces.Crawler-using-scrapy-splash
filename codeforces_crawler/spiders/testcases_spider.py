@@ -46,8 +46,6 @@ class TestcasesSpider(scrapy.Spider):
 
     wanted_problem = {'A': 0, 'B': 0}
 
-    current_url = urls[99]
-
     def parse(self, response):
         print("Processing: ", response.url)
 
