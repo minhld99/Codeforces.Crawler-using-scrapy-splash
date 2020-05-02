@@ -29,16 +29,20 @@ class TestcasesSpider(scrapy.Spider):
     contest_link = open('contest-info.csv', 'r')
     for row in contest_link:
         urls.append(row.split(',')[1])
+    start_urls = urls[99:]
 
-    # Lựa chọn ngôn ngữ chương trình muốn get về
+    # Choose your source_code language
     wanted_languages = ['GNU C11']  # 'Java 8', 'Python 3', 'GNU C++11', 'Java 7', 'Java 6', 'Python 2'
 
-    # Chọn verdict mong muốn
+    # Choose your desired verdicts
     wanted_verdicts = ['OK']
 
+    MAX = 50
+    i = 1
+
     def start_requests(self):
-        self.start_urls.append(self.urls[99])
-        yield scrapy.Request(self.start_urls[0], callback=self.parse)
+        # start from second page, because the first is always update, sometimes it doesn't have a testcase
+        yield scrapy.Request(url=self.start_urls[self.i-1]+'/page/2?order=BY_JUDGED_DESC', callback=self.parse)
 
     wanted_problem = {'A': 0, 'B': 0}
 
@@ -46,10 +50,7 @@ class TestcasesSpider(scrapy.Spider):
 
     def parse(self, response):
         print("Processing: ", response.url)
-        if self.current_url.split('/')[4] not in response.url.split('/')[4]:
-            self.wanted_problem = {'A': 0, 'B': 0}
-            self.current_url = response.url
-        print("====Current_url:"+self.current_url.split('/')[4]+"====Response.url:"+response.url.split('/')[4]+"======")
+
         submission_id_list = response.xpath('//tr/@data-submission-id').extract()
         for submission_id in submission_id_list:
             submission_verdict = response.xpath('//tr[@data-submission-id=%s]/td[6]/span/@submissionverdict'
@@ -80,15 +81,22 @@ class TestcasesSpider(scrapy.Spider):
             if response.selector.xpath('//span[@class="inactive"]/text()').extract():
                 # '\u2192' is the unicode of 'right arrow' symbol
                 if response.selector.xpath('//span[@class="inactive"]/text()')[0].extract() != u'\u2192':
-                    next_page_href = response.selector.xpath(
-                        '//div[@class="pagination"]/ul/li/a[@class="arrow"]/@href')[0]
+                    next_page_href = \
+                    response.selector.xpath('//div[@class="pagination"]/ul/li/a[@class="arrow"]/@href')[0]
                     next_page_url = response.urljoin(next_page_href.extract())
                     yield scrapy.Request(next_page_url, callback=self.parse)
             else:
-                next_page_href = response.selector.xpath(
-                    '//div[@class="pagination"]/ul/li/a[@class="arrow"]/@href')[1]
+                next_page_href = \
+                response.selector.xpath('//div[@class="pagination"]/ul/li/a[@class="arrow"]/@href')[1]
                 next_page_url = response.urljoin(next_page_href.extract())
                 yield scrapy.Request(next_page_url, callback=self.parse)
+
+        time.sleep(0.5)
+        if self.wanted_problem['A'] == 1 and self.wanted_problem['B'] == 1 and self.i < self.MAX:
+            self.i += 1
+            self.wanted_problem = {'A': 0, 'B': 0}
+            # proceed to next link
+            yield scrapy.Request(url=self.start_urls[self.i-1]+'/page/2?order=BY_JUDGED_DESC', callback=self.parse)
 
     def parse_testcase(self, response):
         input_list = response.xpath('//div[@class="roundbox"]//pre[@class="input"]/text()').extract()
