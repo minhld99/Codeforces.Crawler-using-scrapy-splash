@@ -1,1 +1,3 @@
-Scrapy==1.5.1
+pandas
+numpy
+scrapy

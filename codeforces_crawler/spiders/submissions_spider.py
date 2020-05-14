@@ -1,43 +1,78 @@
-# coding=utf-8
 import scrapy
-from scrapy_splash import SplashRequest
-from codeforces_crawler.items import CodeforcesSubmissionItem
+from codeforces_crawler.items import CodeforcesCrawlerItem
+import time
+import csv
 
-script = """
-    function main(splash, args)
-        splash.private_mode_enabled = false
-        assert(splash:go(args.url))
-        assert(splash:wait(2))
-        assert(splash:runjs("$('.click-to-view-tests').click();"))
-        assert(splash:wait(2))
-        --splash.scroll_position = {x=0, y=400}
-        return {
-            html = splash:html(),
-            --png = splash:png(),
-  }
-end
-"""
+item = CodeforcesCrawlerItem()
 
 
 class SubmissionsSpider(scrapy.Spider):
     name = "cf_submission"
     allowed_domains = ['codeforces.com']
-    start_urls = ['https://codeforces.com/problemset/status/1082/problem/F']
 
     # Lựa chọn ngôn ngữ chương trình muốn get về
-    wanted_languages = ['Java 8', 'Python 3', 'GNU C++11', 'Java 7', 'Java 6', 'Python 2']
+    wanted_languages = ['GNU C11']
+
+    # Số lượng tối đa cho mỗi chương trình
+    MAX = 5000
+    count_A = 0
+    count_B = 0
+    count_id = 0
 
     # Kiểm tra verdict mong muốn
-    wanted_verdicts = ['RUNTIME_ERROR', 'OK']  # TIME_LIMIT_EXCEEDED
+    unwanted_verdicts = ['COMPILATION_ERROR']
 
-    # html_file = open("html_file", 'w')
+    with open('contest-info.csv', 'r') as f:
+        contest_info = []
+        header = f.readline()
+        for line in f.readlines():
+            array = line.split(',')
+            contest_id_url = [array[0], array[1]]
+            contest_info.append(contest_id_url)
+
+    start_urls = []
+    task_urls = []
+
+    for info in contest_info[303:350]: # Đã xong 697 ~ 302
+        contest_url = info[1]
+        contest_id = info[0]
+        filename = str(contest_id) + '.csv'
+        with open('codeforces_crawler/crawl-data/' + filename, 'w') as f:
+            writer = csv.writer(f)
+            writer.writerow(['submit_id', 'user_name', 'code', 'problem', 'lang', 'verdict', 'contest_id'])
+        # task_urls.append(contest_url)
+        start_urls.append(contest_url)
+
+    # start_urls.append(task_urls[0])
+
+    # def start_requests(self):
+    #     return [scrapy.Request(url=url) for url in self.start_urls]
 
     def parse(self, response):
-        print("Processing: ", response.url)
-
+        print("=================> Processing: ", response.url)
         submission_id_list = response.xpath('//tr/@data-submission-id').extract()
 
         for submission_id in submission_id_list:
+
+            # if self.count_A >= self.MAX and self.count_B >= self.MAX:
+            #     break
+
+            submission_user = response.xpath('//tr[@data-submission-id=%s]/td[3]/a/text()' % submission_id)[
+                0].extract().strip()
+
+            submission_problem = response.xpath('//tr[@data-submission-id=%s]/td[4]/a/text()' % submission_id)[
+                0].extract().strip()
+
+            ### TODO: Processing program count A and B
+
+            if 'A' not in submission_problem[0] and 'B' not in submission_problem[0]:
+                continue
+            # if 'A' in submission_problem[0] and self.count_A < self.MAX:
+            #     self.count_A += 1
+            # elif 'B' in submission_problem[0] and self.count_B < self.MAX:
+            #     self.count_B += 1
+            # else:
+            #     continue
 
             submission_lang = response.xpath('//tr[@data-submission-id=%s]/td[5]/text()' % submission_id)[
                 0].extract().strip()
@@ -48,43 +83,63 @@ class SubmissionsSpider(scrapy.Spider):
 
             submission_verdict = response.xpath(
                 '//tr[@data-submission-id=%s]/td[6]/span/@submissionverdict' % submission_id)[0].extract().strip()
-            if submission_verdict not in self.wanted_verdicts:
+            if submission_verdict in self.unwanted_verdicts:
                 continue
 
-            code_link = 'https://codeforces.com' + (response.xpath('//tr[@data-submission-id=%s]/td[1]/a/@href'
-                                                                   % submission_id)[0].extract().strip())
-            print("====================================")
-            print(code_link)
-            item = CodeforcesSubmissionItem()
-            item['submission_id'] = submission_id
-            item['submission_lang'] = submission_lang
-            item['submission_verdict'] = submission_verdict
-            yield SplashRequest(url=code_link, callback=self.parse_sourcecode, meta={'item': item}, endpoint='execute',
-                                args={'lua_source': script})
+            code_link = 'https://codeforces.com' + (response.xpath(
+                '//tr[@data-submission-id=%s]/td[1]/a[contains(@href, "submission")]/@href' % submission_id)[
+                                                        0].extract().strip())
 
-    # Next page code
-    # Todo
+            contest_id = response.xpath('//*[@id="sidebar"]/div[1]/table/tbody/tr[1]/th/a/@href')[0].extract()
+            contest_id = contest_id.split('/')[-1]
 
-    def parse_sourcecode(self, response):
-        # self.html_file.write(response.body.decode("utf-8"))
-        # close(html_file)
-        source_code = response.xpath('//*[@id="program-source-text"]').extract()
+            time.sleep(0.1)
 
-        input_list = response.xpath('//div[@class="roundbox"]//pre[@class="input"]/text()').extract()
-        inputs = {}
-        for i in range(0, len(input_list)):
-            inputs["input" + str(i).zfill(2)] = input_list[i]
-            # print(input_list[i])
+            yield scrapy.Request(url=code_link, meta={'submission_id': submission_id,
+                                                      'submission_user': submission_user,
+                                                      'submission_lang': submission_lang,
+                                                      'submission_verdict': submission_verdict,
+                                                      'submission_problem': submission_problem,
+                                                      'contest_id': contest_id,
+                                                      'dont_redirect': True,
+                                                      'handle_httpstatus_list': [302]
+                                                      },
+                                 callback=self.parse_code)
 
-        output_list = response.xpath('//div[@class="roundbox"]//pre[@class="output"]/text()').extract()
-        outputs = {}
-        for j in range(0, len(output_list)):
-            outputs["output" + str(j).zfill(2)] = output_list[j]
-            # print(output_list[i])
+        time.sleep(0.1)
 
-        item = response.meta['item']
-        item['source_code'] = source_code
-        item['inputs'] = inputs
-        item['outputs'] = outputs
+        # TODO: generate next-page url
+        # if self.count_A >= self.MAX and self.count_B >= self.MAX:
+        #     self.count_A = 0
+        #     self.count_B = 0
+        #     self.count_id += 1
+        #     if self.task_urls:
+        #         yield scrapy.Request(url=self.task_urls[self.count_id], callback=self.parse)
+        #     else:
+        #         exit()
+
+        if response.selector.xpath('//span[@class="inactive"]/text()').extract():
+            # '\u2192' is the unicode of 'right arrow' symbol
+            if response.selector.xpath('//span[@class="inactive"]/text()')[0].extract() != u'\u2192':
+                next_page_href = \
+                    response.selector.xpath('//div[@class="pagination"]/ul/li/a[@class="arrow"]/@href')[0]
+                next_page_url = response.urljoin(next_page_href.extract())
+                yield scrapy.Request(next_page_url, callback=self.parse, dont_filter=True)
+        else:
+            next_page_href = response.selector.xpath('//div[@class="pagination"]/ul/li/a[@class="arrow"]/@href')[1]
+            next_page_url = response.urljoin(next_page_href.extract())
+            yield scrapy.Request(next_page_url, callback=self.parse, dont_filter=True)
+
+    def parse_code(self, response):
+        submission_code = response.xpath('//pre[@id="program-source-text"]/text()').extract()
+        # print(source_code)
+        item['submission_id'] = response.meta['submission_id']
+        item['submission_user'] = response.meta['submission_user']
+        item['submission_code'] = submission_code
+        item['submission_problem'] = response.meta['submission_problem']
+        item['submission_lang'] = response.meta['submission_lang']
+        item['submission_verdict'] = response.meta['submission_verdict']
+        item['contest_id'] = response.meta['contest_id']
+        # print("\n=====================>", self.count_A, self.count_B)
 
         yield item

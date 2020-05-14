@@ -2,12 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb1c7960-2faa-4f7e-a69e-d408d9b7ae2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/570.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/688.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/689.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/697.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/701.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/703.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/705.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/706.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/707.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/709.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/711.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/712.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/714.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/716.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/719.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/721.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/722.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/723.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/724.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/727.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/731.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/732.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/733.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/734.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/735.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/spiders/getlink_contest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optional.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/spiders/submissions_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/spiders/submissions_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,9 +68,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/codeforces_crawler" />
+      <recent name="$PROJECT_DIR$/codeforces_crawler/crawl-data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/codeforces_crawler" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -55,6 +99,10 @@
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="451" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.830@0.23.1440.830" timestamp="1588269992616" />
+    <state x="458" y="193" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589386804395">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="458" y="193" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.830@0.23.1440.830" timestamp="1589386804395" />
     <state x="507" y="200" key="FileChooserDialogImpl" timestamp="1588012110520">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
@@ -64,15 +112,15 @@
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1587926796628" />
     <state x="229" y="105" key="SettingsEditor/0.23.1440.830@0.23.1440.830" timestamp="1588245724917" />
-    <state x="101" y="123" width="1240" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588271869533">
+    <state x="101" y="123" width="1240" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589385666452">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
-    <state x="101" y="123" width="1240" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.830@0.23.1440.830" timestamp="1588271869533" />
-    <state x="399" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1588401539400">
+    <state x="101" y="123" width="1240" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.830@0.23.1440.830" timestamp="1589385666452" />
+    <state x="399" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1589447630103">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="399" y="268" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1588397170085" />
-    <state x="399" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.830@0.23.1440.830" timestamp="1588401539400" />
+    <state x="399" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.830@0.23.1440.830" timestamp="1589447630103" />
     <state x="378" y="60" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588240527509">
       <screen x="0" y="23" width="1440" height="830" />
     </state>

@@ -8,13 +8,17 @@
 import scrapy
 
 
-class CodeforcesSubmissionItem(scrapy.Item):
+class CodeforcesCrawlerItem(scrapy.Item):
+    # submissionID
     submission_id = scrapy.Field()
+    submission_code = scrapy.Field()
+    submission_user = scrapy.Field()
+    submission_problem = scrapy.Field()
     submission_lang = scrapy.Field()
     submission_verdict = scrapy.Field()
-    source_code = scrapy.Field()
+    contest_id = scrapy.Field()
+    # output = scrapy.Field()
     pass
-
 
 class CodeforcesTestcaseItem(scrapy.Item):
     contest_id = scrapy.Field()
@@ -22,3 +26,10 @@ class CodeforcesTestcaseItem(scrapy.Item):
     inputs = scrapy.Field()
     outputs = scrapy.Field()
     pass
+
+class GetlinkContestSpiderItem(scrapy.Item):
+    contest_id = scrapy.Field()
+    contest_name = scrapy.Field()
+    contest_link = scrapy.Field()
+    pass
+
