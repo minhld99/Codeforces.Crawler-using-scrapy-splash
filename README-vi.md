@@ -21,6 +21,7 @@ pip3 install -r requirements.txt
 ```
 4. Run:
 ```
-scrapy crawl cf_submission
+scrapy crawl cf_submission --> crawling submission from codeforces
+scrapy crawl cf_testcase --> crawling testcases from codeforces
 ```
 ### Learn lua to write splash in 15 minutes: http://tylerneylon.com/a/learn-lua/

@@ -89,8 +89,8 @@ ITEM_PIPELINES = {
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-# FEED_FORMAT = "csv"
-# FEED_URI = "%(name)s.csv"
+FEED_FORMAT = "csv"
+FEED_URI = "%(time)s.csv"
 # %(name)s.csv
 # %(time)s.csv
 

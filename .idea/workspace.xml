@@ -2,39 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb1c7960-2faa-4f7e-a69e-d408d9b7ae2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/570.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/688.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/689.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/697.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/701.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/703.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/705.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/706.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/707.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/709.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/711.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/712.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/714.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/716.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/719.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/721.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/722.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/723.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/724.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/727.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/731.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/732.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/733.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/734.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/735.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codeforces_crawler/spiders/getlink_contest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optional.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2020-05-29T07-45-33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1006.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1011.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1013.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1015.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1016.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1017.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1023.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1025.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1027.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1028.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1029.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1036.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1037.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1038.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1040.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1041.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1042.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1046.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1047.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1051.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1058.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1059.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1060.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1191.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1194.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1195.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1196.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1197.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1199.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1200.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1201.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1202.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1203.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1204.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1206.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1207.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1208.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1209.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1213.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1214.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1215.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1216.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1219.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1220.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1221.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1228.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1230.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/1234.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces_crawler/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces_crawler/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README-vi.md" beforeDir="false" afterPath="$PROJECT_DIR$/README-vi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/701.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/701.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/703.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/703.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/705.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/705.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/706.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/706.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/707.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/707.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/709.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/709.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/711.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/711.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/712.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/712.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/714.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/714.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/716.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/716.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/719.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/719.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/721.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/721.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/722.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/722.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/723.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/723.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/724.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/724.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/727.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/727.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/731.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/731.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/732.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/732.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/733.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/733.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/734.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/734.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/crawl-data/735.csv" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/crawl-data/735.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codeforces_crawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces_crawler/spiders/submissions_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/spiders/submissions_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces_crawler/spiders/testcases_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces_crawler/spiders/testcases_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optional.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,15 +155,19 @@
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1587926796628" />
     <state x="229" y="105" key="SettingsEditor/0.23.1440.830@0.23.1440.830" timestamp="1588245724917" />
+    <state x="100" y="123" width="1240" height="630" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590736657451">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="100" y="123" width="1240" height="630" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.830@0.23.1440.830" timestamp="1590736657451" />
     <state x="101" y="123" width="1240" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589385666452">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="101" y="123" width="1240" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.830@0.23.1440.830" timestamp="1589385666452" />
-    <state x="399" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1589447630103">
+    <state x="399" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1590735940905">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="399" y="268" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1588397170085" />
-    <state x="399" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.830@0.23.1440.830" timestamp="1589447630103" />
+    <state x="399" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.830@0.23.1440.830" timestamp="1590735940905" />
     <state x="378" y="60" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588240527509">
       <screen x="0" y="23" width="1440" height="830" />
     </state>

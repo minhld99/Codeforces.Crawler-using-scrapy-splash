@@ -99,8 +99,10 @@ class TestcasesSpider(scrapy.Spider):
     def parse_testcase(self, response):
         input_list = response.xpath('//div[@class="roundbox"]//pre[@class="input"]/text()').extract()
         inputs = {}
+
         for i in range(0, len(input_list)):
-            inputs["input" + str(i).zfill(2)] = input_list[i]
+            inputs["input" + str(i+1)] = input_list[i]
+            # str(i).zfill(2)
             # print(input_list[i])
 
         output_list = response.xpath('//div[@class="roundbox"]//pre[@class="answer"]/text()').extract()
